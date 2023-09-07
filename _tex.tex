@@ -1,0 +1,19 @@
+\subsection{}
+    \begin{align*}
+        & 𝕃_{n}⊣(÷{n^{3}-⊣(-2⊢)^{n}n+1}{n^{3}-2^{n}n+10}⊢) \\
+        &=𝕃_{n}⊣(-÷{⊣(-2⊢)^{n}n-n^{3}-1}{2^{n}n-n^{3}-10}⊢) \\
+        &=𝕃_{n}⊣(-⊣(-1⊢)^{n}÷{2^{n}n-n^{3}-1}{2^{n}n-n^{3}-10}⊢) \\
+        &=-𝕃_{n}⊣(⊣(-1⊢)^{n}÷{1-÷{n^{3}}{2^{n}n}-÷{1}{2^{n}n}}{1-÷{n^{3}}{2^{n}n}-÷{10}{2^{n}n}}⊢)
+    \end{align*}
+    let $a_{n}=⊣(-1⊢)^{n}$ \\
+    let $b_{n}=÷{1-÷{n^{3}}{2^{n}n}-÷{1}{2^{n}n}}{1-÷{n^{3}}{2^{n}n}-÷{10}{2^{n}n}}$ \\
+    As established previously, the limits of \\
+    $$ ÷{n^{3}}{2^{n}n},\ ÷{1}{2^{n}n},\ ÷{10}{2^{n}n} $$ \\
+    go to zero, which implies \\
+    $$ 𝕃_{n}⊣(b_{n}⊢)=÷{1-0-0}{1-0-0}=1 $$ \\
+    We will conclude with a proof by contradiction: let us assume $a_{n}b_{n}=L$ \\
+    As $n→∞$, $b_{n}$ becomes arbitrarily close to 1. \\
+    Thus, for some arbitrary precision $ε$: \\
+    $$ ⊣(-1⊢)^{n}⊣(1\pmε⊢)\ \approx\ L $$ \\ % for approximate definitions of approximate
+    However, while $b_{n}$ tends towards 1, $a_{n}$ does not converge to anything. \\
+    Thus the product, specifically when $ε < 1$, cannot converge to anything, disproving the existence of L \qed

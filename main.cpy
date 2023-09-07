@@ -924,7 +924,7 @@ unicode_to_tex = {
     "U+D6F1":"\\itPi (new)",
     "U+25A9":"\\squaregrayfill (new), \\squarecrossfill (new)",
     "U+20A7":"\\textpesetas (new)",
-    "U+03B5":"\\upvarepsilon (new)",
+    "U+03B5":"\\epsilon (new)",
     "U+D4EF":"\\bfscrf (new)",
     "U+25C4":"\\blackpointerleft (new)",
     "U+29BD":"\\uparrowoncircle (new)",
@@ -3407,8 +3407,8 @@ unicode_to_tex = {
     j = j.replace("\u2687\u2026\u2026", "\\hspace{1cm} ")
     j = j.replace("ℕ", "\\mathbb{N} ")
     j = j.replace("𝕥", "\\text ")
-    j = j.replace("⊣", "\\left ")
-    j = j.replace("⊢", "\\right ")
+    j = j.replace("⊣", "\\left")
+    j = j.replace("\u22a2", "\\right")
     j = j.replace("÷", "\\frac ")
     j = j.replace("𝕃_", "\\lim\\limits_")
     j = j.replace("𝕃", "\\lim ")
