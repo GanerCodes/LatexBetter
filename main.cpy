@@ -2393,7 +2393,6 @@ unicode_to_tex = {
     "U+01BA":"\\textbenttailyogh (TIPA/TIPX)",
     "U+D670":"\\ttA (new)",
     "U+2AF2":"\\nhpar (SGML entity)",
-    "U+002F":"\\textslash (new)",
     "U+27F6":"\\longrightarrow",
     "U+027D":"\\textrtailr (TIPA/TIPX)",
     "U+D749":"\\bfittau (new)",
@@ -3411,6 +3410,8 @@ unicode_to_tex = {
     j = j.replace("⊣", "\\left ")
     j = j.replace("⊢", "\\right ")
     j = j.replace("÷", "\\frac ")
+    j = j.replace("𝕃_", "\\lim\\limits_")
+    j = j.replace("𝕃", "\\lim ")
     j = j.replace("\u2205", "\\varnothing ")
     ↪ j
 
@@ -3420,4 +3421,4 @@ with open('tex.tex') as R:
     ∀f,r∈unicode_to_tex.items():
         j = j.replace(chr(int(f₂˲, 16)),  ❟+(r.split(',')₋₁.split('(')₀)+ ❟)
     PC.copy(j)
-    # open('out.tex', w❟).write(j)
+    ☾⨯"Copied!"
