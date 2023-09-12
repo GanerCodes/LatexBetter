@@ -4,10 +4,14 @@ from  pprint import  PrettyPrinter
 def  ASSERT_(c,t='\U00002a33'): assert c,t; return c
 pprint = PrettyPrinter(2).pprint
 DEGEN_=g$>deque(g,maxlen=0)
-EMPTY_STRING=''
-COMPLEX_UNIT=1j
-MATH_PI = 3.14159265359
-MATH_TAU = 6.28318530718
+EMPTY_STRING, COMPLEX_UNIT = '', 1j
+MATH_PI, MATH_TAU = 3.14159265359, 6.28318530718
+class  Namespace:
+    __init__ = SPECIAL_SELF_ $> KWARGS_ .keys()* list | setattrs ( SPECIAL_SELF_ )| list * KWARGS_ .values()
+    __setitem__ = <$ SPECIAL_SELF_ ,k,v$>setattr( SPECIAL_SELF_ ,k,v)
+    __getitem__ = <$ SPECIAL_SELF_ ,k$>getattr( SPECIAL_SELF_ ,k)
+    __iter__ = SPECIAL_SELF_ $>iter( SPECIAL_SELF_. __dict__.items())
+    __repr__ = SPECIAL_SELF_ $>f"""ℕ({(', '.join(f"""{k}={v}"""  for k,v in  SPECIAL_SELF_. __dict__.items()))})""" 
 class  pait:
     import  subprocess as SP
     def  __call__( SPECIAL_SELF_ ,s,* ARGS_ ,** KWARGS_ ):
