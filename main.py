@@ -3522,5 +3522,5 @@ with open('tex.tex') as R:
     j = fixie(R.read())
     for f,r in unicode_to_tex.items():
         j = j.replace(chr(int(f[2:], 16)), " "+(r.split(',')[-1].split('(')[0])+" ")
-    PC.copy(j)
+    PC.copy(j.rstrip())
     print *"Copied!"

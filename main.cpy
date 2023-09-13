@@ -3420,5 +3420,5 @@ with open('tex.tex') as R:
     j = fixie(R.read())
     ∀f,r∈unicode_to_tex.items():
         j = j.replace(chr(int(f₂˲, 16)),  ❟+(r.split(',')₋₁.split('(')₀)+ ❟)
-    PC.copy(j)
+    PC.copy(j.rstrip())
     ☾⨯"Copied!"
