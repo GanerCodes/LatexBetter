@@ -3507,6 +3507,8 @@ unicode_to_tex = {
 
 def  fixie(j):
     j = j.replace("\u2687\u2026\u2026", "\\hspace{1cm} ")
+    j = j.replace("ℝ", "\\mathbb{R} ")
+    j = j.replace("ℚ", "\\mathbb{Q} ")
     j = j.replace("ℕ", "\\mathbb{N} ")
     j = j.replace("𝕥", "\\text ")
     j = j.replace("⊣", "\\left")

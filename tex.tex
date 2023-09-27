@@ -1,20 +1,12 @@
-\subsection{} % 4.3
-    Rearrange:
-    \begin{align*}
-        &𝕃_{n}\left(\sqrt{n^{2}+1}+\left(n+1\right)^{2}-an^{2}-bn\right) \\
-        =&𝕃_{n}\left(\sqrt{n^{2}+1}+\left(n+1\right)+n\left(n+1\right)-an^{2}-bn\right) \\
-        =&𝕃_{n}\left(\sqrt{n^{2}+1}+\left(1-a\right)n^{2}+\left(2-b\right)n+1\right) \\
-        =&𝕃_{n}\left(\sqrt{n^{2}+1}+\left(1-a\right)n^{2}+\left(2-b\right)n\right)+1 \\
-        =&𝕃_{n}\left(\sqrt{n^{2}+1}+\left(1-a\right)n^{2}+\left(2-b\right)n\right)+1
-    \end{align*}
-    
-    Let $a=1$ and $b=3$
-    \begin{align*}
-        &𝕃_{n}\left(\sqrt{n^{2}-1}-n\right) \\
-        =&𝕃_{n}\left(\left(\sqrt{n^{2}-1}-n\right)\frac{\left(\sqrt{n^{2}-1}+n\right)}{\left(\sqrt{n^{2}-1}+n\right)}\right) \\
-        =&𝕃_{n}\left(-\frac{1}{\sqrt{n^{2}-1}+n}\right) \\
-        &𝕥{Use the fact that} \sqrt{n^{2}-1}+n\ \ge\ n \\
-        =&0
-    \end{align*}
-    $$𝕥{Bring back the 1 from earlier}$$
-    $$𝕃_{n}\left(\sqrt{n^{2}+1}+\left(n+1\right)^{2}-an^{2}-bn\right)=1$$ \qed
+\subsection*{3.1}
+\begin{proof} $ $ \newline
+    Let $M≔\frac{1}{2}\left(x+y\right)$, thus $x<M<y$ \\
+    Choose $ε=÷{\left|y-x\right|}{100}$ \\
+    $𝕃_{n}\left(10^{-n}\right)=0$, which implies that $∃N∈ℕ$ such that $ε<10^{-N}$ \\
+    Let $J≔M$ cut off at the N-th decimal, keeping leftward digits (and 0-ing rightward digits) \\
+    As $J∈ℚ$, and $J∈\left[M-ε,M+ε\right]$, this is a rational number between $x$ and $y$. \\
+    Let $H≔0.1*\sqrt{2}$ cut off at the N-th decimal, keeping rightward digits (and 0-ing leftward digits) \\
+    Let $D≔H+J$ \\
+    As an irrational number added or subtracted by a rational number is irrational,\\
+    $D∈ℝ\backslashℚ$ and $D∈\left[M-2ε,M+2ε\right]$, which is between $x$ and $y$.
+\end{proof}
