@@ -825,7 +825,7 @@ unicode_to_tex = {
     "U+D687":"\\ttX (new)",
     "U+030F":"\\textdoublegrave (TIPA/TIPX)",
     "U+2B19":"\\diamondbotblack (new)",
-    "U+039A":"\\upKappa (new)",
+    "U+039A":"\\kappa (new)",
     "U+D764":"\\bfsansOmicron (new)",
     "U+00E6":"\\ae",
     "U+2A1C":"\\lowint (SGML entity)",
@@ -1899,7 +1899,7 @@ unicode_to_tex = {
     "U+2780":"\\circledsansone (new)",
     "U+296E":"\\updownharpoonsleftright (Taco Hoekwater)",
     "U+21C7":"\\leftleftarrows (AMS)",
-    "U+03BA":"\\upkappa (new)",
+    "U+03BA":"\\kappa (new)",
     "U+0255":"\\textctc (TIPA/TIPX)",
     "U+2928":"\\toea (AMS)",
     "U+2A36":"\\otimeshat (new)",
@@ -3507,6 +3507,8 @@ unicode_to_tex = {
 
 def  fixie(j):
     j = j.replace("\u2687\u2026\u2026", "\\hspace{1cm} ")
+    j = j.replace("𝟙", "\\mathbbm{1} ")
+    j = j.replace("𝟚", "\\mathbbm{2} ")
     j = j.replace("ℝ", "\\mathbb{R} ")
     j = j.replace("ℚ", "\\mathbb{Q} ")
     j = j.replace("ℕ", "\\mathbb{N} ")
