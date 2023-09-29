@@ -532,7 +532,7 @@ unicode_to_tex = {
     "U+2241":"\\nsim (AMS)",
     "U+23E1":"\\ubrbrak (new)",
     "U+27E2":"\\concavediamondtickleft (new)",
-    "U+03BB":"\\textlambda (new), \\uplambda (new)",
+    "U+03BB":"\\textlambda (new), \\lambda (new)",
     "U+25E3":"\\llblacktriangle (new)",
     "U+21CC":"\\rightleftharpoons (AMS)",
     "U+D41B":"\\bfb (new)",
@@ -1705,7 +1705,6 @@ unicode_to_tex = {
     "U+20D2":"\\vertoverlay (new)",
     "U+2945":"\\rightarrowplus (Taco Hoekwater)",
     "U+220C":"\\nni (new)",
-    "U+0259":"\\textschwa (TIPA/TIPX)",
     "U+02E0":"\\ipasupgamma (new)",
     "U+21C6":"\\leftrightarrows (AMS)",
     "U+03A0":"\\upPi (new)",
@@ -1925,7 +1924,7 @@ unicode_to_tex = {
     "U+2786":"\\circledsansseven (new)",
     "U+2A70":"\\approxeqq (Taco Hoekwater)",
     "U+D51A":"\\frakW (new)",
-    "U+039B":"\\upLambda (new)",
+    "U+039B":"\\lambda (new)",
     "U+01C2":"\\textdoublebarpipe (TIPA/TIPX)",
     "U+23B8":"\\lvboxline (new)",
     "U+D4A1":"\\scrF (new)",
@@ -3507,8 +3506,12 @@ unicode_to_tex = {
 
 def  fixie(j):
     j = j.replace("\u2687\u2026\u2026", "\\hspace{1cm} ")
+    j = j.replace(" lambda ", "\\lambda ")
+    j = j.replace("ℚ", "\\mathbb{Q} ")
     j = j.replace("ℕ", "\\mathbb{N} ")
+    j = j.replace("ℝ", "\\mathbb{R} ")
     j = j.replace("𝕥", "\\text ")
+    j = j.replace("ə", "\\schwa")
     j = j.replace("⊣", "\\left")
     j = j.replace("\u22a2", "\\right")
     j = j.replace("÷", "\\frac ")
