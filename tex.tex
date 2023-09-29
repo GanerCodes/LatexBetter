@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \subsection*{3.1}
 \begin{proof} $ $ \\
     Let $M≔÷{1}{2}\left(x+y\right)$, thus $x<M<y$ \\
@@ -11,3 +12,39 @@
     As $÷{\sqrt{2}}{10}∈ℝ\backslashℚ$, and an irrational minus a rational is irrational, $D∈ℝ\backslashℚ$. \\
     Thus $D$ is an irrational number between $x$ and $y$.
 \end{proof}
+=======
+\subsection*{3.2}
+\begin{proof} $ $ \\
+    Fix some $m∈ℕ$. Note that $k∈\left\{0,...,2^m-1\right\}$, thus $0≤÷{k}{2^m}≤÷{2^m-1}{2^m}<1$. This implies that $0≤x_n<1\ ∀n∈ℕ$. Which further implies that all terms of any subsequence, $B$, would be within this bound, meaning if $B$ has a limit, $b$, $0≤b≤1$. \\
+    \\
+    We will show that $2^m+k$ is a bijection to $ℕ^+$. \\
+    The numbers constructable fixing a given $m∈ℕ$ is of the form:
+    $$n=2^m+k$$
+    Leading to the range:
+    $$\left\{2^m,...,2^m+(2^m-1)=2^{m+1}-1\right\}$$
+    For example:
+    \begin{align*}
+        m=0:& \left\{1\right\} \\
+        m=1:& \left\{2,3\right\} \\
+        m=2:& \left\{4,5,6,7\right\}
+    \end{align*}
+    $𝟙$: $2^{m+1}-1$ ends, numerically, immediately before $2^{m+1}$. Thus the range of values for any given $m$ ends immediately before the range of values of $m+1$. This implies all subsets of $ℕ$ that fix $m$ are disjoint. \\
+    $𝟚$: $k$ clearly strictly increases the value of $n$, thus there can be no overlap within a given subset that fixes $m$. \\
+    By $𝟙$ and $𝟚$, we can see we can construct all elements of $ℕ^+$. \\
+    \\
+    To show that any number $L$ where $0≤L≤1$ is a limit point of $x_n$, we will construct a subsequence, $j_n$ so that $a_{j_n}$ converges to $L$. \\
+    As each $n$ corresponds to a unique $(m,k)$ pair, we will establish the relevant bijection of $n↔(m,k)$, which as previously established is strictly increasing with respect to $m$ and $k$. \\
+    $$j_{m}=2^{m}+\left(k∈ℕ\ ∣\ \left|\frac{k}{2^{m}}-L\right|=\min\left(\left|\frac{κ}{2^{m}}-L\right|∀κ∈\left\{0,...,2^{m}-1\right\}\right)\right)$$
+    For any $m$, the available choices for $k$ are $\left\{0,...,2^m-1\right\}$. \\
+    As $0≤÷{k}{2^m}<1$, each successive value of $m$ doubles the amount of possible $k$'s. This corresponds to better approximations of $L$. To be exact: \\
+    $$∀m∈ℕ,\ ∃k\ ∣\ \left|x_{2^m+k}-L\right|\le\frac{1}{2^{m}}$$
+    Thus, to show the limit:
+    \begin{quote}
+        Choose $0≤L≤1$ \\
+        Choose $ε>0$ \\
+        Let $m∈ℕ$ where $÷{1}{2^m}<ε$ \\
+        $𝕃_{n}\left(\frac{1}{2^{x}}\right)=0\ ∴\ ∃\ i∈ℕ ∣ \left|x_{j_i}-L\right|<ε$ \\
+        Thus, $L$ is a limit point of $x_n$, as $x_{j_n}$ can become arbitrary close to $L$.
+    \end{quote}
+\end{proof}
+>>>>>>> refs/remotes/origin/master
